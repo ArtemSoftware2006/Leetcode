@@ -6,6 +6,7 @@ public class MultyPrefixAndSuffixArray
     //Оказалась не очень выгодной, если в массиве много нулей.
     public int[] ProductExceptSelf(int[] nums)
     {
+        
         int prefixMulty = 1;
         int suffixMulty = nums.Skip(1).Aggregate((x, y) => x * y);
         int[] result = new int[nums.Length];
